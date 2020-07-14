@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" />
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+<div class="main-container">
+    <h1>Tic Tac Toe</h1>
+    
+    <div id="players-form" class="players-form">
+        <div>
+            <h2>Player 1</h2>
+            <div>
+                <label for="p1-name">Name:</label>
+                <input id="p1-name" placeholder="Player 1" />
+            </div>
+            <div>
+                <input id="p1-ai-controlled" type="checkbox" />
+                <label for="p1-type-human">AI controlled</label>
+            </div>
+        </div>
+        
+        <div>
+            <h2>Player 2</h2>
+            <div>
+                <label for="p2-name">Name:</label>
+                <input id="p2-name" placeholder="Player 2">
+            </div>
+            <div>
+                <input id="p2-ai-controlled" type="checkbox" />
+                <label for="p2-type-human">AI controlled</label>
+            </div>
+        </div>
+    </div>
+
+    <div id="players-score" class="players-score hidden">
+        <h2>Score</h2>
+        <table>
+            <tr>
+                <th id="p1-score-header"></th>
+                <th id="p2-score-header"></th>
+            </tr>
+            <tr>
+                <td id="p1-score-value"></td>
+                <td id="p2-score-value"></td>
+            </tr>
+        </table>
+    </div>
+        
+    <div id="xoview" class="xo-view"></div>
+    
+    <div class="controls">
+        <button id="start-btn" onclick="startGame()">Start</button>
+        <button id="next-btn" disabled onclick="nextGame()">Next</button>
+        <button id="reset-btn" disabled onclick="resetGame()">Reset</button>
+    </div>
+
+    <footer>
+        <p>Built by Elad Amos</p>
+    </footer>
+</div>
+<script src="TicTacToe.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+body {
+    font-family: sans-serif;
+     background: linear-gradient(to right, #f09819, #edde5d);
+}
+
+.main-container {
+    max-width: 500px;
+    margin: 10px auto;
+    /* background: white; */
+}
+
+.hidden {
+    display: none !important;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.xo-p1 {
+    color: red;
+}
+
+.xo-p2 {
+    color: blue;
+}
+
+.players-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.players-score {
+    text-align: center;
+}
+
+.players-score table {
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.players-score table td, .players-score table th {
+    padding: 5px;
+    border: 1px solid #000;
+    min-width: 95px;
+}
+
+.controls {
+    padding: 10px;
+    text-align: center;
+}
+
+/* .Players div{
+    margin: 0 20px;
+}
+
+.Players input{
+    outline: none;
+    font-size: 10px;
+    background-color: deepskyblue;
+    padding: 10px 5px;
+    border: 2px solid deepskyblue;
+    border-radius: 7px;
+}
+.Players input:focus{
+    border: 2px solid red;
+}
+
+.Button{
+    padding-top: 0;
+    text-align: center;
+} */
+
+.xo-view {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.xo-table {
+    margin: 0 auto;
+}
+
+.xo-table, .xo-table td{
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.xo-table td:hover{
+    background-color: deepskyblue;
+}
+
+.xo-table td {
+    width: 100px;
+    height: 100px;    
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 0;
+    border-collapse: collapse;
+    border: 2px solid black;
+
+    transition-property: font-size;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.xo-table td.played {
+    font-size: 70px;
+}
+
+.xo-table tr:first-child > td {
+    border-top: 0;
+}
+
+.xo-table tr:last-child > td {
+    border-bottom: 0;
+}
+
+.xo-table tr > td:first-child {
+    border-left: 0;
+}
+
+.xo-table tr > td:last-child {
+    border-right: 0;
+}
+
+.win-cell {
+    background-color: #a8f6ab;
+}
+
+footer p {
+    text-align: center;
+    font-size: 10px;
+    color: black;
+    padding-bottom: 2px;
+}
+.Players input{
+    outline: none;
+    font-size: 10px;
+    background-color: deepskyblue;
+    padding: 10px 5px;
+    border: 2px solid deepskyblue;
+    border-radius: 7px;
+}
